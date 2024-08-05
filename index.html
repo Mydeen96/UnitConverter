@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Unit Converter</title>
+    <!-- Style -->
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <section id="container">
+            <div id="container1" class="containers">
+                <h1 id="head-el">Unit Converter</h1>
+                <p id="slogan-el">Convert the measurement EASIER!!</p>
+                <select name="unit-type" id="unit-type">
+                    <option value="selectUnitType" disabled selected >Select Unit Type</option>
+                    <option value="length" id="length" >Length</option>
+                    <option value="mass" id="mass" >Mass</option>
+                    <option value="time" id="time" >Time</option>
+                    <option value="volume" id="volume" >Volume</option>
+                </select>
+            </div>
+            <div id="container2" class="containers">
+                <div class="units">
+                    <select name="unit-from" id="unit-from">
+                        <option value="selectUnit" disabled selected >Select Unit</option>
+                        <!-- code will be injected by JavasScript -->
+                    </select>
+                    <input type="input" id="value-from" >
+                </div>
+                <div class="units">
+                    <select name="unit-to" id="unit-to">
+                        <option value="selectUnit" disabled selected >Select Unit</option>
+                        <!-- code will be injected by JavasScript -->
+                    </select>
+                    <input type="text" id="value-to" disabled>
+                </div>
+                <button id="convert-btn">Convert</button>
+            </div>
+    </section>
+
+    <!-- Script -->
+     <script src="./script.js"></script>
+</body>
+</html>

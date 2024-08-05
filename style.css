@@ -1,0 +1,19 @@
+body{
+    padding: 10px;
+    margin: 0;
+    box-sizing: border-box;
+    height: 95vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#container{
+    border: 1px solid red;
+    padding: 30px;
+}
+.containers{
+    border: 1px solid black;
+    margin: 10px;
+    padding: 10px;
+}
+
