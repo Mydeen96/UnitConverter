@@ -4,42 +4,38 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Unit Converter</title>
-    <!-- Style -->
-    <link rel="stylesheet" href="./style.css">
+    <!-- Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Karla:ital,wght@0,200..800;1,200..800&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <!-- CSS -->
+     <link rel="stylesheet" href="./style.css">
 </head>
 <body>
-    <section id="container">
-            <div id="container1" class="containers">
-                <h1 id="head-el">Unit Converter</h1>
-                <p id="slogan-el">Convert the measurement EASIER!!</p>
-                <select name="unit-type" id="unit-type">
-                    <option value="selectUnitType" disabled selected >Select Unit Type</option>
-                    <option value="length" id="length" >Length</option>
-                    <option value="mass" id="mass" >Mass</option>
-                    <option value="time" id="time" >Time</option>
-                    <option value="volume" id="volume" >Volume</option>
-                </select>
+    <div class="container">
+        <section class="input-container">
+            <h1>Metric/Imperial Unit Conversion</h1>
+            <input type="text" name="input" id="input-box"  maxlength="2" value="20">
+            <button id="convert-btn">Convert</button>
+        </section>
+        <section class="value-contaier">
+            <div class="unit-types">
+                <h3>Length (Meter/Feet)</h3>
+                <p class="converted-values" id="length">20 meters = 65.616 feet | 20 feet = 6.096 meters</p>
             </div>
-            <div id="container2" class="containers">
-                <div class="units">
-                    <select name="unit-from" id="unit-from">
-                        <option value="selectUnit" disabled selected >Select Unit</option>
-                        <!-- code will be injected by JavasScript -->
-                    </select>
-                    <input type="input" id="value-from" >
-                </div>
-                <div class="units">
-                    <select name="unit-to" id="unit-to">
-                        <option value="selectUnit" disabled selected >Select Unit</option>
-                        <!-- code will be injected by JavasScript -->
-                    </select>
-                    <input type="text" id="value-to" disabled>
-                </div>
-                <button id="convert-btn">Convert</button>
+            <div class="unit-types">
+                <h3>Volume (Liters/Gallons)
+                </h3>
+                <p class="converted-values" id="volume" >20 liters = 5.284 gallons | 20 gallons = 75.708 liters</p>
             </div>
-    </section>
+            <div class="unit-types">
+                <h3>Mass (Kilograms/Pounds)</h3>
+                <p class="converted-values" id="mass">20 kilos = 44.092 pounds | 20 pounds = 9.072 kilos</p>
+            </div>
+        </section>
+    </div>
 
-    <!-- Script -->
+    <!-- SCRIPT -->
      <script src="./script.js"></script>
 </body>
 </html>
